@@ -1,0 +1,37 @@
+/* 
+               2022
+             20222022
+           2022   2022
+         2022        2022
+       20222022202220222022
+     202220222022202220222022
+   2022                    2022
+ 2022                        2022
+*/
+#include <stdio.h>
+int main()
+{
+	int i,j,k,spc=15;
+   for(i=1;i<=8;i++)
+   {
+         for(k=spc;k>=1;k--)
+            {
+              printf(" ");
+            }
+   for(j=1;j<=i;j++)
+   {
+   if(j==1||j==i||i==5||i==6)
+    printf("2022");
+    else if(i==2)
+    printf("  ");
+    else if(i==3)
+    printf("   ");
+    else if(i==4)
+      printf("    ");
+    else if(i==7||i==8)
+    printf("    ");
+}
+    printf("\n");
+    spc-=2;
+   }
+}
